@@ -1,0 +1,116 @@
+.chat-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.chat-container h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.goals-restrictions-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    .chat-container {
+        margin: 10px;
+        padding: 20px;
+        max-width: none;
+    }
+    
+    .chat-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .goals-restrictions-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-container {
+        gap: 20px;
+    }
+}
+
+.input-group {
+    flex: 1;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.recipe-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.recipe-label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.response-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.response-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.response-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #333;
+    min-height: 60px;
+    max-height: 400px;
+    overflow-y: auto;
+}
