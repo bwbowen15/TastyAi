@@ -26,7 +26,7 @@ const Chat = () => {
 
         const data = {recipe, restrictions, goals};
         try{
-            const res = await fetch("http://localhost:8080/chat", {
+            const res = await fetch("https://tastyai-205d7f0474f5.herokuapp.com//chat", {
                 method: "POST",
                 headers:{
                     "Content-Type": "application/json",
