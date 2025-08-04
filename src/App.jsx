@@ -12,6 +12,7 @@ function App() {
       <nav>
         <h1>TastyAi</h1>
       </nav>
+      <Sidebar></Sidebar>
       
       
       <Routes>
