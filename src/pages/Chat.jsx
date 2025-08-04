@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import Button from '@mui/material/Button';
 import { TextField } from "@mui/material";
 import './Chat.css';
+import Sidebar from "../Components/Sidebar";
 
 const Chat = () => {
     const recipeRef = useRef();
@@ -39,13 +40,13 @@ const Chat = () => {
         }catch(error){
             console.error("Error:", error);
         };
-        console.log("submitted");
-        console.log(goalsRef);
-        console.log(restrictionsRef);
-        console.log(recipeRef);
+        
         console.log(response);
+        //TODO: save resonse to sidebar, eventually this will save to user database and allow them to store their recipes.
     }
     return(
+        <>
+        <Sidebar></Sidebar>
         <div className="chat-container">
             <h1>Chat</h1>
             <form onSubmit={handleSubmit} className="form-container">
@@ -88,6 +89,7 @@ const Chat = () => {
                 <pre className="response-content">{response}</pre>
             </div>
         </div>
+        </>
     );
 }
 
