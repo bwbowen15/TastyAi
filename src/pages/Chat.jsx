@@ -27,7 +27,8 @@ const Chat = () => {
 
         const data = {recipe, restrictions, goals};
         try{
-            const res = await fetch("https://tastyai-205d7f0474f5.herokuapp.com//chat", {
+            const res = await fetch("http://localhost:8080/", {
+                //mode: 'no-cors',
                 method: "POST",
                 headers:{
                     "Content-Type": "application/json",
@@ -43,6 +44,7 @@ const Chat = () => {
         
         console.log(response);
         //TODO: save resonse to sidebar, eventually this will save to user database and allow them to store their recipes.
+        //Eventually when you click the recipe on the sidebar it will popup with a box that shows the recipe, along with the macros with nice logos.
     }
     return(
         <>
@@ -71,21 +73,21 @@ const Chat = () => {
                         </label>
                         <TextField
                             id="outlined-basic"
-                            label="Instructions(be specific, if you do not give enough details it will not generate a recipe)"
+                            label="Instructions- Be Specific!"
                             variant="filled"
                             multiline
                             rows={7} 
                             inputRef={recipeRef}
                             fullWidth
                             required
-                        />
+                            style={{ backgroundColor: '#333333', border: '1px solid #444444',borderRadius: '5px'}}/>
                     </div>
-                    <Button variant="contained" type="submit">Submit</Button>
+                    <Button id="submit-button" variant="contained" type="submit" >Submit</Button>
                 </div>
             </form>
 
             <div className="response-section">
-                <h2>Response</h2>
+                <h2>Recipe</h2>
                 <pre className="response-content">{response}</pre>
             </div>
         </div>

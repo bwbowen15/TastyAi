@@ -2,16 +2,17 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
-    background-color: white;
+    background-color: #2b2b2b;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+    border: 1px solid #10a37f;
+    
 }
 
 .chat-container h1 {
     margin-bottom: 25px;
     text-align: center;
-    color: #333;
+    color: #f0f0f0;
     font-size: 2rem;
 }
 
@@ -58,7 +59,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #555;
+    color: #f0f0f0;
     font-size: 0.9rem;
 }
 
@@ -67,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
 }
 
 .recipe-input-group {
@@ -82,35 +84,56 @@
     margin-bottom: 8px;
     text-align: center;
     font-weight: 500;
-    color: #555;
+    color: #f0f0f0;
     font-size: 0.9rem;
 }
 
 .response-section {
     margin-top: 30px;
     padding: 20px;
-    background-color: #f8f9fa;
+     background-color: 	#2b2b2b;
     border-radius: 8px;
-    border: 1px solid #e9ecef;
+    /*border: 1px solid #e9ecef;*/
 }
 
 .response-section h2 {
     margin-bottom: 15px;
-    color: #333;
+    color: #f0f0f0;
     font-size: 1.3rem;
+    background-color: 	#2b2b2b;
 }
 
 .response-content {
-    background-color: white;
+    background-color: 	#2b2b2b;
     padding: 20px;
     border-radius: 6px;
     white-space: pre-wrap;
     font-family: 'Courier New', monospace;
-    border: 1px solid #ddd;
+    border: 1px solid #10a37f;
     line-height: 1.5;
     font-size: 0.9rem;
-    color: #333;
+    color: #f0f0f0;
     min-height: 60px;
     max-height: 400px;
     overflow-y: auto;
 }
+
+#goals-field{
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+#restrictions-field{
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+#submit-button{
+    background-color: #10a37f;
+}
+#submit-button:hover{
+    background-color: #13b08c;
+}
+
+
